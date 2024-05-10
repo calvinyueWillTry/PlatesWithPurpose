@@ -16,11 +16,10 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        type: {
-            type: DataTypes.STRING,
-            allowNull: false,
+        userType_id: {
+            type: DataTypes.INTEGER,
             references: {
-                model: 'user_Type',
+                model: 'user_type',
                 key: 'id',
             },
         },
