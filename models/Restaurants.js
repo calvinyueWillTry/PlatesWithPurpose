@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require("./Models/connection");
+const sequelize = require("../config/connection");
 class Restaurants extends Model {}
 Restaurants.init(
     {
@@ -17,18 +17,7 @@ Restaurants.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
-        price: {
-            type: DataTypes.INTEGER,
-            allowNull: true,
-        },
-        time_to_prepare: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        },
-        cost: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-        }
+        
     },
     {
         sequelize,

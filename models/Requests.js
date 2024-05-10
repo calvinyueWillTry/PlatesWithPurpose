@@ -3,13 +3,11 @@ const sequelize = require("../Models/connection");
 class Requests extends Model {}
 Requests.init(
     {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true, 
-            foreignKey: "user_type",
-            foreignKey: "restaurants",
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
     },
     delivered: {
         type: DataTypes.BOOLEAN,
@@ -30,6 +28,22 @@ Requests.init(
         type: DataTypes.INTEGER,
         allowNull: false,
     },
+    menu_id: {
+        type: DataTypes.INTEGER,
+        references: {
+        model: 'menu',
+        key: 'id',
+        unique: false
+        }
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+        model: 'user',
+        key: 'id',
+        unique: false
+        }
+    }
     },
     {
         sequelize,

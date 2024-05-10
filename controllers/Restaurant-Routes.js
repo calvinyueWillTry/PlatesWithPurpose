@@ -2,7 +2,7 @@
 const router = require('express').Router();
 const Restaurants = require("../models/Restaurants");
 //const sequelize = require("./Models/connection");
-const app = express();
+//const app = express();
 
 const restaurants = fetch("https://foodbukka.herokuapp.com/api/v1/menu");
     //console.log(restaurants);//Promise { <pending> }
