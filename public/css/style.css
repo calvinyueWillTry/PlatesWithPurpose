@@ -82,21 +82,50 @@
     
 }
 
-.loginDiv {
+.login-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     position: relative;
     text-align: center;
-    padding: 25px;
+    padding: 5px;
+    margin: 5%;
     top: 300px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 50px;
     z-index: 500;
 }
 
+.form-group {
+  align-items: end;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: end;
+  padding: 5px;
+  width: 100%;
+}
 
 @media (max-width: 991px) {
        

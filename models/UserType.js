@@ -11,10 +11,6 @@ UserType.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        user_type: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         description: {
             type: DataTypes.STRING,
             allowNull: true,
