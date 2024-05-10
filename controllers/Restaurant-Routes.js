@@ -1,10 +1,11 @@
 // const PORT = process.env.PORT || 3001;
 const router = require('express').Router();
 const Restaurants = require("../models/Restaurants");
+const Menu = require("../models/Menu");
 //const sequelize = require("./Models/connection");
 //const app = express();
 
-const restaurants = fetch("https://foodbukka.herokuapp.com/api/v1/menu");
+const restaurants = fetch("https://themealdb.com/api/json/v1/1/search.php?s");
     //console.log(restaurants);//Promise { <pending> }
 router.get("/restaurants/:id", async (req, res) => {
     try {

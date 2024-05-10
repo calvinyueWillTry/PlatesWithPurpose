@@ -17,7 +17,7 @@ User.init(
             autoIncrement: true,
         },
         type: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
             references: {
                 model: 'user_Type',
