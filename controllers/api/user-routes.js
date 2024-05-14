@@ -17,10 +17,15 @@ router.post('/', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
+  console.log("User 1-----------------------------------------------");
+  console.log( req.body);
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
+    console.log("userData", userData);
+
     if (!userData) {
+      
       res
         .status(400)
         .json({ message: 'Incorrect email or password, please try again' });

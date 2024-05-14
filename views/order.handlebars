@@ -1,25 +1,11 @@
 <div class="row">
-  <div class="col-12">
-     <!--Section: Video Block-->
-    <section>
-      <video autoplay muted loop>
-        <source src="/images/PizzaMaking.mp4" type="video/mp4">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
-          <div class="container d-flex justify-content-center align-items-center h-100">
-            <div class="row align-items-center">
-              <div class="col-12">
-                <h1 class="mb-0 text-white display-1">PLATES WITH PURPOSE</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </video>
-      <!--Section: Video Block-->
-    <div class="homePageMessage">
-      <h1>Order a Plate</h1>
-      <h3>A place where recievers and gifters enjoy our plates. People post their needs and the givers see a room of choices where they can
-pick options to pay for that will then be delivered by us.</h3>
- <h2>End hunger and indignity on the same plate.</h2>
-    </div>
+  <div class="col-12 plate-header">
+  
   </div>
+    <h1>Select from our menu</h1>
+    <div class="menu-container">
+    {{#each menuItems as |item|}}
+      {{> menu_item_details}}
+    {{/each}}
+    </div>
 </div>
