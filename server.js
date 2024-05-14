@@ -8,7 +8,8 @@ const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 //const { Sequelize } = require('sequelize');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+//const Handlebars = require('handlebars'); 
+//const fs = require('fs'); 
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -32,6 +33,13 @@ app.use(session(sess));
 // Inform Express.js on which template engine to use
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+
+// Read and compile Handlebars templates
+const loginTemplate = fs.readFileSync('login.handlebars', 'utf8');
+const compiledLoginTemplate = Handlebars.compile(loginTemplate);
+
+const signupTemplate = fs.readFileSync('profile.handlebars', 'utf8');
+const compiledSignupTemplate = Handlebars.compile(signupTemplate);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
