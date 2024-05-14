@@ -8,8 +8,7 @@ const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 //const { Sequelize } = require('sequelize');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-//const Handlebars = require('handlebars'); 
-//const fs = require('fs'); 
+  
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -26,7 +25,6 @@ const sess = {
   })
 };
 
-
 // Set up Handlebars.js engine with custom helpers
 app.use(session(sess));
 
@@ -34,18 +32,14 @@ app.use(session(sess));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
-// Read and compile Handlebars templates
-const loginTemplate = fs.readFileSync('login.handlebars', 'utf8');
-const compiledLoginTemplate = Handlebars.compile(loginTemplate);
 
-const signupTemplate = fs.readFileSync('profile.handlebars', 'utf8');
-const compiledSignupTemplate = Handlebars.compile(signupTemplate);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening P${PORT}`));
