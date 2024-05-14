@@ -20,14 +20,17 @@ Menu.init(
         price: {
             type: DataTypes.DECIMAL,
             allowNull: true,
+            defaultValue: 0,
         },
         time_to_prepare: {
-            type: DataTypes.DATE,
+            type: DataTypes.INTEGER,
             allowNull: false,
+            defaultValue: 10,
         },
         cost: {
             type: DataTypes.DECIMAL,
             allowNull: false,
+            defaultValue: 0,
         }
     },
     {

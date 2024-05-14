@@ -50,7 +50,7 @@ Plates.init(
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: "requests"
+        modelName: "plates"
     }
 );
 module.exports = Plates;
