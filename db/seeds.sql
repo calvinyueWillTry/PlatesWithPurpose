@@ -1,0 +1,5 @@
+INSERT INTO menu (menu_Item_name, description,price, time_to_prepare, cost,  created_at,updated_at) values ('Hamburger', 'not a quarter pounder', '5.50', '30', '2.50', NOW(), NOW());
+INSERT INTO menu (menu_Item_name, description,price, time_to_prepare, cost,  created_at,updated_at) values ('Pizza', 'Pepperoni pizza', '6.78', '30', '3.25', NOW(), NOW());
+INSERT INTO menu (menu_Item_name, description,price, time_to_prepare, cost,  created_at,updated_at) values ('Grilled cheese', 'on sourdough', '2.70', '30', '1.25', NOW(), NOW());
+INSERT INTO menu (menu_Item_name, description,price, time_to_prepare, cost,  created_at,updated_at) values ('Chicken Dinner', 'Baked chicken, mashed potatoes, gravy, greendbeans and a delicious strawberry cheesecake', '6.50', '30', '4.55', NOW(), NOW());
+INSERT INTO menu (menu_Item_name, description,price, time_to_prepare, cost,  created_at,updated_at) values ('Wings - BBQ', 'Sweet baby rays BBQ sauce', '4.70', '30', '4.75', NOW(), NOW());
