@@ -35,7 +35,6 @@ router.get('/order', async (req, res) => {
       } 
 })
 
-<<<<<<< HEAD
 router.post('/order', async (req, res) => {
     
     try {
@@ -54,6 +53,4 @@ router.post('/order', async (req, res) => {
 module.exports = router;
 
 
-=======
->>>>>>> a0874c4c2c29db0fb36cdcf8ea46eb9315f6b6a0
 module.exports = router;
