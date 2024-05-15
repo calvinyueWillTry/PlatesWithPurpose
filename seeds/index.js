@@ -12,16 +12,24 @@ const seedMenus = async () => {
         individualHooks: true,
         returning: true,
     })
-    const viewers = await Menu.bulkCreate(menuItemOne, menuItemTwo, {
+    const viewers = await Menu.bulkCreate(menuItemOne, {
+        individualHooks: true,
+        returning: true,
+    })
+    const viewer = await Menu.bulkCreate(menuItemTwo, { //where to call this?
         individualHooks: true,
         returning: true,
     });
     console.log(viewers, "menu seed");
     await Restaurants.create({
-        ...restaurantItem, ...menuItemOne , ...menuItemTwo,
+        ...restaurantItem, ...menuItemOne ,
+        //...restaurantItem and ...menuItemOne displayed in SQL
         user_id: viewers.id
+    })
+    await Restaurants.create({
+        ...restaurantItem, ...menuItemTwo,
+        user_id: chosen.id
     })
 }
 seedMenus()
-console.log("seeds called");
 //module.exports = 
