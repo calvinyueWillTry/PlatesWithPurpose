@@ -16,14 +16,9 @@ User.init(
             primaryKey: true,
             autoIncrement: true,
         },
-<<<<<<< HEAD
         type: {
             type: DataTypes.INTEGER,
             allowNull: false,
-=======
-        userType_id: {
-            type: DataTypes.INTEGER,
->>>>>>> a0874c4c2c29db0fb36cdcf8ea46eb9315f6b6a0
             references: {
                 model: 'user_type',
                 key: 'id',
