@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-12 plate-header">
+  
+  </div>
+    <h1>Select from our menu</h1>
+    <div class="menu-container">
+    {{#each menuItems as |item|}}
+      {{> menu_item_details}}
+    {{/each}}
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/js/order.js"></script>

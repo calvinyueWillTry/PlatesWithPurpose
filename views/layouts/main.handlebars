@@ -24,7 +24,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
     <div class="container-fluid">
-      <img src="images/PwP_logo.png"> <!-- error message because this can't show up -->
+      <img class="logo" src="/images/PwP_logo.png">
       
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,10 +37,10 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/plate/order">Order a Plate</a>
+            <a class="nav-link" href="/api/plate/order">Order a Plate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/plate/give">Give a Plate</a>
+            <a class="nav-link" href="/api/plate/give">Give a Plate</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact Us</a>
@@ -56,7 +56,7 @@
                 <p class="noUser">Login</p>
               </a>
             {{/if}}
-            {{{body}}} <!-- output of pages starts from here -->
+        
       </div>
     </div>
   </nav>
