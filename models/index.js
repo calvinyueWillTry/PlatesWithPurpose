@@ -1,16 +1,23 @@
-// import models
-const Requests = require("./Plates");
+const Requests = require("./Requests");
+const Restaurant = require("./Restaurants");
 const Menu = require("./Menu");
-const UserTypes = require("./UserType");
-const Users = require("./User");
+const User = require("./User");
+const UserType = require("./userType");
+const Restaurants = require("./Restaurants");
 
-
-//const Restaurants = require("./Restaurants");
+//selects Restaurants then Menu (item)
+Restaurant.hasOne(Menu, {foreignKey: "menu_id"});
+Restaurant.belongsToMany(User, {
+    //foreignKey: "restaurant_id",
+    through: Requests
+});
+User.hasMany(Requests);
 
 // Relations
-UserTypes.belongsTo(Users, {
+UserType.belongsTo(User, {
     foreignKey: "userType_id",
     onDelete: "CASCADE"
 });
 
-module.exports = {Requests, Menu, Users, UserTypes };
+
+module.exports = {Requests, Restaurants, Menu, User, UserType};

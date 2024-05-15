@@ -35,4 +35,25 @@ router.get('/order', async (req, res) => {
       } 
 })
 
+<<<<<<< HEAD
+router.post('/order', async (req, res) => {
+    
+    try {
+        const newPlate = await Plate.create({
+          ...req.body,
+          user_id: req.session.user_id,
+        });
+    
+        res.status(200).json(newProject);
+      } catch (err) {
+        res.status(400).json(err);
+      }
+
+})
+
+module.exports = router;
+
+
+=======
+>>>>>>> a0874c4c2c29db0fb36cdcf8ea46eb9315f6b6a0
 module.exports = router;

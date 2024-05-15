@@ -1,10 +1,15 @@
-// partials/menu_item_details.handlebars
 <div class="menu-item-card">
-    <div>
-        <img src="/images/menu/grilled-chicken-1334632_640.jpg"/>
-    <h3>{{menuItem_name}}</h3>
-    <h6>{{description}}</h6>
-    
-  
+    <div class="menu-header">
+        <img class="menu-image" src="/images/menu/{{fileName}}"/>
+        <h3>{{menuItem_name}}</h3>
+    </div>
+    <div class="menu-body">
+        <h6>{{description}}</h6>
   </div>
+
+   <div class="menu-footer">
+        <h6 class="wait-time">Wait time {{time_to_prepare}} minutes</h6>
+        <button  id="menuItem_{{id}}" onclick="addItem({{id}})">Order</button>
+  </div>
+
 </div>
