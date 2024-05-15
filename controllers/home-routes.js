@@ -16,7 +16,7 @@ router.get('/contact', async (req, res) => {
 });
 
 router.get('/login', async (req, res) => {
-  console.log("called");
+  console.log("called login");
   res.render('login', { 
     
   });
