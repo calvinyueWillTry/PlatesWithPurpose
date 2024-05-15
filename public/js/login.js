@@ -1,4 +1,4 @@
-const loginFormHandler = async (event) => {
+const loginFormHandler = async function (event) {
     event.preventDefault();
 
     const email = document.querySelector('#email-login').value.trim();
@@ -50,5 +50,3 @@ const signupFormHandler = async (event) => {
 
     // Add click event handler to the button
     $("#login").click(loginFormHandler());
-
-  
