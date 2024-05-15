@@ -14,12 +14,19 @@ Restaurants.init(
             allowNull: false,
         },
         description: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         },
-        
+        // restaurant_reference: {
+        //     type: DataTypes.INTEGER,
+        //     references: {
+        //     model: 'menu',
+        //     key: 'id',
+        //     unique: false
+        //     }
+        //  },
     },
-    {
+    {//where is created_at and updated_at coming from?
         sequelize,
         freezeTableName: true,
         underscored: true,

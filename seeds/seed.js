@@ -1,0 +1,1 @@
+//bulkCreate for requests, and log current users from a JSON object

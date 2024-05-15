@@ -20,7 +20,7 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
-                model: 'user_Type',
+                model: 'user_type',
                 key: 'id',
             },
         },

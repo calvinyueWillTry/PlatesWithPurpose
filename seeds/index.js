@@ -8,6 +8,7 @@ const restaurantItem = require("./restaurants.json");
 
 const seedMenus = async () => {
     await sequelize.sync({ force: true });
+    //"returned {true}, but the message channel closed before a response was received"
     const chosen = await Restaurants.bulkCreate(restaurantItem, {
         individualHooks: true,
         returning: true,
@@ -23,11 +24,12 @@ const seedMenus = async () => {
     console.log(viewers, "menu seed");
     await Restaurants.create({
         ...restaurantItem, ...menuItemOne ,
-        //...restaurantItem and ...menuItemOne displayed in SQL
+        //...restaurantItem and ...menuItemOne+...menuItemTwo displayed in SQL
         user_id: viewers.id
     })
     await Restaurants.create({
         ...restaurantItem, ...menuItemTwo,
+        //...restaurantItem and ...menuItemOne+...menuItemTwo displayed in SQL
         user_id: chosen.id
     })
 }

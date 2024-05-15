@@ -28,10 +28,12 @@ const menuItems = require("../seeds/menuItem_List1.json");//program to run data
 
     router.get("/menu/:id", async (req, res)=> {
         try {
-            const menuSelection = await Menu.findAll();
+            const menuSelection = await Restaurants.findAll({where: {id: req.params.id}, include: {model: Menu}}
+            );
             const menuInquiry = menuSelection.map((menu)=>{
                 return menu.get({ plain: true });
             });
+            console.log(menuInquiry);
             res.render("restaurant", {menuInquiry});
         } catch(error) {
             console.error(error);

@@ -8,6 +8,7 @@
         "cost": "5.66"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Healthy Snacks For Late-night Cravings",
         "description": "Can't sleep? Want to snack? These delicious snacks are a quick and easy fix to all your after-midnight hunger pangs. Chomp down on some <a href= \"https://tasty.co/recipe/hummus-and-carrot-sticks\">hummus and carrot sticks</a> or devour a couple handfuls of delicious <a href= \"https://tasty.co/recipe/spicy-roasted-chickpeas\">oven-roasted chickpeas</a>. And once you're full and satisfied, sail softly back into dreamland!",
         "price": "16.00",
@@ -15,6 +16,7 @@
         "cost": "11.27"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Easy Snacks To Pack For Your Next Beach Trip",
         "description": "Planning a trip to the beach to celebrate the coming of summer? These easy snacks will make sure you're fueled and ready for the next game of water polo. From <a href=\"https://tasty.co/recipe/garlic-parmesan-and-herb-pita-chips\">parmesan garlic & herb pita chips</a> to super easy to make <a href=\"https://tasty.co/recipe/after-school-banana-roll-ups\">banana roll-ups</a>, these treats are beach-friendly and hassle free. So what are you waiting for? Pack up your picnic basket with these goodies: summer's here! ",
         "price": "26.97",
@@ -22,6 +24,7 @@
         "cost": "22.38"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Low Carb Meals For A Healthy You",
         "description": "Looking for low-carb options? We've got plenty for you! The crispy <a href=\"https://tasty.co/recipe/easy-chicken-piccata\">Chicken Piccata</a> and the saucy <a href=\"https://tasty.co/recipe/ratatouille\">Ratatouille Lasagna</a> each pack tons of flavor without going overboard on carbs — and they pair well with just about anything. The hardest part? Choosing which dish to make first!",
         "price": "30.94",
@@ -29,6 +32,7 @@
         "cost": "30.18"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "31 Days 31 Avocado Recipes ",
         "description": " You can never go wrong with avocado, and these easy mouthwatering recipes can enjoyed at any time of the day. Start your day with a wholesome <a href=\"https://tasty.co/recipe/radish-avocado-toast\">Raddish Avocado Toast</a> or enjoy a <a href=\"https://tasty.co/recipe/salmon-crab-stack\">Salmon Crab Seafood Stack</a> on a lunch date with your special someone. But why settle for one when you have 31 options to try from? Avo-fun for the whole month! ",
         "price": "21.99",
@@ -36,6 +40,7 @@
         "cost": "18.36"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Recipes For When You Don't Feel Like Working Out",
         "description": "We've all had those days when you just don't feel like working out. Regardless of whether or not you make it to the gym, these recipes will keep you feeling engaged, alert, and fueled up for whatever comes your way. From <a href=\"https://tasty.co/recipe/keto-caprese-avocado-bowls\">caprese avocado bowls</a> to <a href=\"https://tasty.co/recipe/spinach-pasta\">spinach pasta</a>, these meals are nutritious, delicious, and nourishing.",
         "price": "7.99",
@@ -43,6 +48,7 @@
         "cost": "4.73"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Use Your Yogurt Wisely!",
         "description": "With so many health benefits, you ought to use yogurt wisely and creatively! It is easy to digest, packed with vitamins, and a rich source of protein as well. Make the <a href=\"https://tasty.co/recipe/honey-granola-yogurt-bark\">Honey Granola Yogurt Bark</a> for your on-the-go meals. <a href=\"https://tasty.co/recipe/paprika-spiced-chicken-with-lemon-yogurt-and-crispy-potatoes\">Paprika-Spiced Chicken With Lemon Yogurt And Crispy Potatoes</a> is the perfect dinner recipe as it is delicious, easy and healthy, all at the same time!",
         "price": "18.69",
@@ -50,6 +56,7 @@
         "cost": "49.23"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Low-Carb Avocado Chicken Salad",
         "description": "This chicken salad is a lunchtime delight! Packed with creamy avocado, tender chicken, and crunchy veggies, it's a healthy and satisfying meal that won't weigh you down. Tossed in a tangy yogurt dressing with a hint of spice, it's a flavor explosion that's perfect for a light meal.",
         "price": "7.95",
@@ -57,6 +64,7 @@
         "cost": "31.29"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Make The Perfect Bowl Of Pasta With These Recipes",
         "description": "We've curated a special assortment of pasta recipes just for you. From our unique <a href=\"https://tasty.co/recipe/tomato-and-anchovy-pasta\">tomato anchovy pasta</a> to mouth-watering <a href=\"https://tasty.co/recipe/one-pot-chicken-bacon-and-goat-cheese\">chicken, bacon and goat cheese pasta</a>, these recipes are made to impress! We're going to go eat our hearts out now: time to get cooking!",
         "price": "14.79",
@@ -64,6 +72,7 @@
         "cost": "11.23"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Rie McClenny",
         "description": "Savor the bold flavors of this Tomato and Anchovy Pasta, a perfect weeknight meal that's both simple and satisfying. With a zesty tomato sauce and umami-packed anchovies, this dish will have your taste buds dancing in no time!",
         "price": "29.14",
@@ -71,6 +80,7 @@
         "cost": "41.37"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Creamy Cajun Pasta",
         "description": "Say hello to a taste of the bayou with this creamy Cajun pasta! Savory sausage and a bevy of vegetables get a spicy kick with a Cajun-inspired seasoning blend, all tossed in a luscious creamy sauce. Best of all, it all comes together in just one pot for easy prep and clean-up! Enjoy!",
         "price": "11.99",
@@ -78,6 +88,7 @@
         "cost": "5.95"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Shrimp Lovers Only",
         "description": "You can never go wrong with shrimp, and these easy and delicious recipes will make sure everyone keeps coming back for seconds. Call your family and friends over for some <a href=\"https://tasty.co/recipe/fried-shrimp-and-mango-salsa-hand-rolls\">fried shrimp mango salsa hand roll-up</a> and whip up a couple of dozen honey <a href=\"https://tasty.co/recipe/hawaiian-garlic-shrimp\">Hawaiian garlic shrimp</a> and watch everyone go ham on the shrimp!",
         "price": "13.49",
@@ -85,6 +96,7 @@
         "cost": "9.72"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "30 Shrimp Recipes",
         "description": "Craving shrimp recipes? We’ve got you covered. But why settle for just one when we’ve curated 30 mouthwatering shrimp recipes to excite your tastebuds? Start with our crowd-pleasing Vegetable and <a href=\"https://tasty.co/recipe/vegetable-and-shrimp-lumpia\">Shrimp Lumpia</a> or try a fancy <a href=\"https://tasty.co/recipe/hawaiian-garlic-shrimp\">Hawaiian Garlic Shrimp and Mac Salad</a>. These impressive recipes won't let you down.",
         "price": "13.79",
@@ -92,6 +104,7 @@
         "cost": "11.73"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Make The Perfect Bowl Of Pasta With These Recipes",
         "description": "We've curated a special assortment of pasta recipes just for you. From our unique <a href=\"https://tasty.co/recipe/tomato-and-anchovy-pasta\">tomato anchovy pasta</a> to mouth-watering <a href=\"https://tasty.co/recipe/one-pot-chicken-bacon-and-goat-cheese\">chicken, bacon and goat cheese pasta</a>, these recipes are made to impress! We're going to go eat our hearts out now: time to get cooking!",
         "price": "12.72",
@@ -99,6 +112,7 @@
         "cost": "10.42"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Recipes To Celebrate Moving Out Of Your Parents House",
         "description": "Living on your own can get overwhelming having to keep up with grocery lists and meal prepping all by yourself. And that's why we've found just the right recipes that allow you to take it easy but also feel proud about taking care of yourself! The <a href=\"https://tasty.co/recipe/instant-noodle-lasagna-via-tasty-demais\">instant noodle lasagna</a> is a twist on a lazy staple. And of course brownies are a must for your midnight munchy routine. This one just needs<a href=\"https://tasty.co/recipe/the-best-one-bowl-brownies\">ONE bowl</a>! Bookmark this <a href=\"https://tasty.co/recipe/balsamic-chicken-and-veggies-meal-prep\">balsamic chicken and veggies meal prep</a> recipe to meet your daily veggies and protein intake for busy weeks. Time for some adultin'!",
         "price": "28.85",
@@ -106,6 +120,7 @@
         "cost": "21.64"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "A Healthy Start To Your Day!",
         "description": "Wake up in the morning and heat up last nights pizza? Is that you? Dont worry we have you covered! Start your day the healthy way by eating right! Your new day deserves and fresh and healthy start and with <a href=\"https://tasty.co/recipe/peanut-butter-energy-bites\">peanut-butter-energy-bites</a> or why not try our<a href=\"https://tasty.co/recipe/healthier-fried-rice\"> healthier-fried-rice </a>the options are endless! ",
         "price": "22.20",
@@ -113,6 +128,7 @@
         "cost": "17.19"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Meals In Under 30 Minutes",
         "description": "You should be taking advantage of these recipes especially when you're pressed for time in the kitchen! With these, you can whip up a divine <a href=\"https://tasty.co/recipe/spaghetti-squash-shrimp-scampi\">garlic shrimp scampi</a> within 30 minutes. Want to make a quick lunch for office? Make a healthy <a href=\"https://tasty.co/recipe/thai-tofu-collard-wraps\">thai tofu collard wraps</a> for lunch. Cooking has never been quicker!",
         "price": "23.95",
@@ -120,6 +136,7 @@
         "cost": "18.87"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "7 Days, 7 Pasta Dishes",
         "description": "Who doesn't love pasta? Look forward to every single day of the week with these 7 amazing pasta dishes! You'll keep coming back for more, from creamy <a href=\"https://tasty.co/recipe/healthier-chicken-alfredo-pasta\"> Chicken Alfredo</a> to delectable <a href=\"https://tasty.co/recipe/one-pot-lemon-garlic-shrimp-pasta\"> Lemon and Garlic Spaghetti</a>! Satisfy your mid-week cravings with <a href=\"https://tasty.co/recipe/creamy-one-pot-spinach-shrimp-pasta\">Creamy One-Pot Spinach Shrimp Pasta</a>. Serve up some al dente goodness all week long!",
         "price": "39.95",
@@ -127,6 +144,7 @@
         "cost": "23.81"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "5 Zesty Citrus Recipes",
         "description": "Looking for a way to brighten up your meals? Look no further! Start your day off right with some fluffy <a href=\"https://tasty.co/recipe/lemon-ricotta-pancakes\">Lemon Ricotta Pancakes</a>. Then, cool off in the afternoon with a refreshing <a href=\"https://tasty.co/recipe/watermelon-lime-slushie\">Watermelon-Lime Slushie</a>. Whether you're looking for something sweet or tangy, this collection of recipes featuring lemon, lime, and other citrus fruits has you covered. Get ready to add some zest to your meals!",
         "price": "11.83",
@@ -134,6 +152,7 @@
         "cost": "8.74"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Robert Broadfoot",
         "description": "This easy 30-minute pasta recipe transforms ingredients that you already have in your kitchen into a posh, seafood dish you’ll want to serve at your next dinner party. And since the whole dish is made in a single pot, clean-up is easy. Don’t be surprised if this becomes your favorite quick go-to. ",
         "price": "11.03",
@@ -141,6 +160,7 @@
         "cost": "7.40"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Cheese the Pain Away",
         "description": "Ever wondered why Jerry could not keep his hands off the cheese? Cheese is not only \"Tasty\" but tis' loved by all. Balance your sweet side with something savoury by trying out these cheesy recipes.. and see for yourself why Jerry kept coming back for more.  SAY YES TO CHEESE!",
         "price": "6.99",
@@ -148,6 +168,7 @@
         "cost": "3.62"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Recipes to Cook For a Big Family Dinner!",
         "description": "Big family dinners are a time for everyone to come together and gather around a table full of delicious eats. Impress everyone with these family-friendly (and family-size!) recipes that are sure to satisfy the whole crew. From a never-ending <a href=\"https://tasty.co/recipe/100-layer-lasagna\"> 100-Layer Lasagna </a> to a filling <a href=\"https://tasty.co/recipe/chili-cheese-casserole\"> Chili Cheese Casserole</a> , these dishes will have everyone coming back for more!",
         "price": "69.99",
@@ -155,6 +176,7 @@
         "cost": "36.68"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Getting Back to Basics",
         "description": "Looking for inspiration in the New Year? Get back to basics with Tasty's Top 10 recipes to make in January. Tasty is here to help you savor the flavor and rediscover the joy of cooking—turning each creation into something you will enjoy.",
         "price": "4.99",
@@ -162,6 +184,7 @@
         "cost": "3.67"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "chicken broth",
         "description": "This delicious one-pot pasta dish is a godsend for busy evenings when you crave a satisfying meal without the hassle of cooking and cleanup. In a single pot, you sauté garlic until golden and aromatic, then add the chicken broth, milk, and fettuccine and let the magic happen. As the pasta simmers, it soaks up the flavors of the garlicky broth, making it super tasty. Once the pasta is tender, generous handfuls of grated Parmesan cheese are stirred into the dish, adding a luxurious touch. It's a mouthwatering combination of flavors and textures that kids and adults adore, making it a surefire hit at the dinner table. ",
         "price": "3.99",
@@ -169,7 +192,7 @@
         "cost": "3.09"
     },
     {
-        
+        "restaurant_reference": "2",
         "menuItem_name": "3 Ingredient Recipes To Make Your Life Easy",
         "description": "Too lazy to cook? These super-quick and easy recipes are perfect for you! From our all time favorite <a href=\"https://tasty.co/recipe/cheesy-garlic-broccoli\">cheesy garlic broccoli</a> to juicy <a href=\"https://tasty.co/recipe/3-ingredient-teriyaki-chicken\">teriyaki chicken</a>, these ideas will delight everyone's taste buds and keep you craving even more. Open up our treasure-trove of recipes and never go hungry ever again!",
         "price": "39.16",
@@ -177,6 +200,7 @@
         "cost": "31.31"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "3-Ingredient 3 Course Meal",
         "description": "Looking for a fancy meal to cook that doesn't require too much effort? These 3-ingredient, 3-course meal recipe sets are perfect for you. Whether it's a date night or a movie night with friends, cook up these meals in no time and serve to impress everyone. Start with mouth-watering <a href=\"https://tasty.co/recipe/jalapeno-poppers\">jalapeno poppers</a> and end your meal with a sweet <a href=\"https://tasty.co/recipe/3-ingredient-chocolate-strawberry-braid\">chocolate strawberry braid</a>. We've got something for every taste, no matter what.",
         "price": "17.80",
@@ -184,6 +208,7 @@
         "cost": "15.03"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "3 Ingredient Recipes For An Entire Week",
         "description": "Having trouble meal-prepping? Not to fear, we've brought you a weekly meal plan for an entire week with just 3 ingredients for each dish. For instance, tuck into a hearty <a href=\"https://tasty.co/recipe/tomato-avocado-egg-salad\">Tomato Avocado Egg Salad</a> for a cozy Sunday at home. Take a glance and let us know which ones are your favorites! ",
         "price": "55.50",
@@ -191,6 +216,7 @@
         "cost": "29.97"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "No-Fuss Recipes For Those Lazy Days",
         "description": "Are you famished but too tired to cook? Well, look no further: these super easy recipes will keep all of your hunger pangs at bay. From a delicious <a href=\"https://tasty.co/recipe/2-ingredient-chocolate-cake\">two-ingredient chocolate cake</a> to a <a href=\"https://tasty.co/recipe/3-ingredient-teriyaki-chicken\">three-ingredient teriyaki chicken</a> you can whip up these mouthwatering (and fool-proof!) recipes in no time. ",
         "price": "10.49",
@@ -198,6 +224,7 @@
         "cost": "7.72"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "30 Ways You've Never Eaten Chicken Before ",
         "description": "Chicken is always a crowd favorite, but we you gotta switch it up! Say goodbye to your plain Jane chicken recipes and taste test our carefully picked recipes. If you are a guac fiend like we are, you will absolutely devour the <a href==\"https://tasty.co/recipe/bacon-guacamole-chicken-bombs\">Bacon Guacamole Chicken Bombs</a> and if you're going the fancy route, the <a href=\"https://tasty.co/recipe/buffalo-chicken-dip\">Buffalo Chicken Dip</a> is a must-have! Don't forget to pick your favorites!",
         "price": "42.79",
@@ -205,6 +232,7 @@
         "cost": "30.45"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Easy To Hard: Chicken Recipes",
         "description": "Everyone's a chicken lover but have you ever tried to challenge yourself with something impressively delicious? We're about to transform you into a masterchef. For a low-lift chicken recipe, try <a href=\"https://tasty.co/recipe/3-ingredient-teriyaki-chicken\">3-ingredient teriyaki chicken</a>. Then, when you're in the mood for a challenge, try out our mouth-watering <a href=\"https://tasty.co/recipe/crispy-creamy-chicken-cordon-bleu\">crispy creamy chicken cordon bleu</a>. Aprons at the ready – it's cooking time! ",
         "price": "14.65",
@@ -212,6 +240,7 @@
         "cost": "13.04"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "3-Ingredient Recipes That Will Change Your Life",
         "description": "Just because you haven't had the time to go grocery shopping doesn't mean you can't come up with a tasty and filling meal. Our <a href=\"https://tasty.co/recipe/baked-halibut\">baked halibut</a>, <a href=\"https://tasty.co/recipe/3-ingredient-cajun-bbq-ribs\">Cajun BBQ ribs</a>, and <a href=\"https://tasty.co/recipe/3-ingredient-teriyaki-chicken\">teriyaki chicken</a> are absolutely delicious dinners, and best of all, they each require only three ingredients. Oh, how could we forget about dessert? Our <a href=\"https://tasty.co/recipe/3-ingredient-hazelnut-brownies\">hazelnut brownies</a> and <a href=\"https://tasty.co/recipe/3-ingredient-creme-brulee\">creme brulee</a> are just as simple. From our kitchen to yours, you’re welcome.",
         "price": "33.95",
@@ -219,6 +248,7 @@
         "cost": "28.81"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Easy Recipes That Will Fill You Up",
         "description": "Everyone can use a handful of quick, easy meals that fill you right up. From our versatile <a href=\"https://tasty.co/recipe/3-ingredient-teriyaki-chicken\">teriyaki chicken</a> to our easy <a href=\"https://tasty.co/recipe/finger-sandwiches\">finger sandwiches</a>, these recipes will keep you satisfied. Open up this treasure trove of recipes and bookmark them for lazy nights.",
         "price": "16.99",
@@ -226,6 +256,7 @@
         "cost": "13.61"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Bring Japan To Your Kitchen",
         "description": "Want to experience the exotic flavors from around the world but too busy to travel? Here's the solution, why not bring the destination to your kitchen! The Japanese culinary export is waiting at your doorstep. Grab your bowls and put on your favorite Ghibli movie because you are invited to bask in the Japanese culinary culture.",
         "price": "31.03",
@@ -233,6 +264,7 @@
         "cost": "18.14"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Meals In Under 30 Minutes",
         "description": "You should be taking advantage of these recipes especially when you're pressed for time in the kitchen! With these, you can whip up a divine <a href=\"https://tasty.co/recipe/spaghetti-squash-shrimp-scampi\">garlic shrimp scampi</a> within 30 minutes. Want to make a quick lunch for office? Make a healthy <a href=\"https://tasty.co/recipe/thai-tofu-collard-wraps\">thai tofu collard wraps</a> for lunch. Cooking has never been quicker!",
         "price": "6.00",
@@ -240,6 +272,7 @@
         "cost": "1.21"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Tasty Dinners for Every Night of December",
         "description": "End the year with a culinary big bang! 2022 is coming to an end, but your nights shouldn't without tasting these delicious recipes. We have got <a href=\"https://tasty.co/recipe/baked-lobster-tails\">Baked Lobster Tails</a>, <a href=\"https://tasty.co/recipe/creamy-tuscan-chicken\">Creamy Tuscan Chicken</a>, <a href=\"https://tasty.co/recipe/korean-style-bbq-beef\">Korean-Style BBQ Beef</a>, or a <a href=\"https://tasty.co/recipe/20-minute-one-pan-pizza\">20-Minute One-Pan Pizza</a> to cover all of your cravings. Are you convinced or should we go on?",
         "price": "36.47",
@@ -247,6 +280,7 @@
         "cost": "22.18"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Getting Back to Basics",
         "description": "Looking for inspiration in the New Year? Get back to basics with Tasty's Top 10 recipes to make in January. Tasty is here to help you savor the flavor and rediscover the joy of cooking—turning each creation into something you will enjoy.",
         "price": "21.19",
@@ -254,6 +288,7 @@
         "cost": "8.36"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "3-Ingredient Teriyaki Chicken",
         "description": "Even though this chicken teriyaki dish uses just three ingredients, the flavor is outstanding, and you can't beat the quick cooking time! This effortless weeknight meal starts with browning pieces of boneless chicken thighs in a hot pan. Soy sauce and brown sugar are added, infusing the meat with the perfect balance of sweet and salty. The liquid sizzles and thickens in the pan into a delectable teriyaki sauce that envelops the chicken, ensuring each bite is packed with flavor. Paired with fluffy white rice, this dish goes from stove to table in 30 minutes, proving that minimal effort can yield maximum satisfaction.",
         "price": "13.69",
@@ -261,6 +296,7 @@
         "cost": "9.23"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "52 Kid-Friendly Recipes",
         "description": "This selection of 52 (!!) kid-friendly recipes is a lifesaver for all parents. You’ll find easy after-school snacks like <a href=\"https://tasty.co/recipe/pizza-chips\">pizza chips</a>, healthy but delicious breakfasts like these <a href=\"https://tasty.co/recipe/pb-j-overnight-oats\">PB&J overnight oats</a>, along with plenty of fun recipes to make with your kids for brunch or as a weekend activity. And fair warning: lots of these will be a big hit with the grownups, too!",
         "price": "27.95",
@@ -268,6 +304,7 @@
         "cost": "21.29"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Is This Too Much Chocolate For Your Eyes?",
         "description": "How much chocolate is too much chocolate? These easy and tasty chocolatey treats cover all the bases for the chocolate season. Kick it off with crowd-pleasing classics like a <a href=\"https://tasty.co/recipe/stuffed-chocolate-chip-cookies\">Stuffed Chocolate Chip Cookie</a>, or try a modern and Instagram-ready treat like <a href=\"https://tasty.co/recipe/cookies-cream-cheesecake-bundt-cake\">Cookies 'n Cream Cheesecake Bundt Cake</a>. Whatever you choose, just know that you can never go wrong with chocolate! ",
         "price": "4.79",
@@ -275,6 +312,7 @@
         "cost": "1.29"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Everything You Can Cook In A Mug",
         "description": "Mug cooking is one of the greatest boons of our existence. You can snap up a quick, yet delicious, meal all in one dish. This <a href=\"https://tasty.co/recipe/mug-baked-rigatoni\">rigatoni</a> looks fancy AF, but comes out of a mug. Have frequent midnight cravings? Bookmark this <a href=\"https://tasty.co/recipe/pizza-in-a-mug\">pizza in a mug</a> or check out these different <a href=\"https://tasty.co/compilation/3-minute-mug-cakes-4-ways\">flavored mug cakes</a>. For busy mornings, we recommend this <a href=\"https://tasty.co/recipe/blueberry-french-toast-in-a-mug\">blueberry french toast in a mug</a>. Get your mugs ready already!",
         "price": "2.99",
@@ -282,6 +320,7 @@
         "cost": "1.79"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Vaughn Vreeland",
         "description": "This single-serving chocolate mug cake delivers on all counts and surpasses all expections! It's an easy recipe with simple ingredients that yields an incredibly moist, fudgy cake with mouthwatering flavor in every bite. Start by mixing basic pantry staples like flour, sugar, cocoa powder, and milk in your favorite mug. Top with a generous dollop of hazelnut spread, then sit back and watch as this decadent concoction transforms into a gourmet dessert in under two minutes in the microwave. You can whip up this delectable dessert whenever the craving strikes and savor life's little luxuries one spoonful at a time. ",
         "price": "1.99",
@@ -289,6 +328,7 @@
         "cost": "0.79"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Tasty's Best Pasta Recipes",
         "description": "Having trouble deciding what you should make next? Take a look at a few of the best pasta recipes we have to offer! From a <a href=\"https://tasty.co/recipe/vegan-mac-n-cheese\">vegan version of mac 'n' cheese</a> to delicious <a href=\"https://tasty.co/recipe/spaghetti-meatball-bake\">baked meatballs and spaghetti</a>, these ideas will satisfy every craving. Pair your pasta with a salad, dessert, and glass of wine — and you've got a restaurant-quality menu right at home!",
         "price": "49.14",
@@ -296,6 +336,7 @@
         "cost": "41.37"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Penne For Your Thoughts",
         "description": "Despite so many options, classic penne is always a great choice when it comes to pasta. It’s easy to cook, delicious, and pairs well with almost any sauce. <a href=\"https://tasty.co/recipe/creamy-chicken-penne-pasta\">Creamy Chicken Penne Pasta</a> will always satisfy, or try the <a href=\"https://tasty.co/recipe/fajita-pasta-bake\">Fajita Pasta Bake</a> for a creative twist. Add as many or as few veggies as you want and you’re good to go!",
         "price":"0.99",
@@ -303,6 +344,7 @@
         "cost": "0.53"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Creamy Chicken Penne Pasta",
         "description": "If you're in need of a hug in a bowl, this creamy chicken penne pasta is just the ticket. With tender chicken, perfectly cooked pasta, and a velvety sauce, it's pure comfort in a bowl.",
         "price": "15.95",
@@ -310,13 +352,15 @@
         "cost": "10.95"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "6 Classic Homemade Cookie Recipes",
         "description": "If you're looking for a taste of the cookies you had in your childhood, you've come to the right place! Here are six homemade cookie recipes that will definitely remind you of the past. Whether you reach for classic <a href=\"https://tasty.co/recipe/the-best-chewy-chocolate-chip-cookies\">chocolate chip cookies</a> or fan-favorite <a href=\"https://tasty.co/recipe/iced-oatmeal-cookies\">iced oatmeal cookies</a>, all of these delicious treats are sure to leave you satisfied and full!",
         "price": "10.99",
         "time_to_prepare": "30",
         "cost": "7.55"
     },
-    {
+    {   
+        "restaurant_reference": "2",
         "menuItem_name": "Cookies For All Your Sugar Cravings",
         "description": "One can never go wrong with cookies and these recipes cater to everything your sweet tooth needs. Munch on the classic chocolate chip, or mix it up with fun aquarium cookies. Just make sure to keep a glass of milk handy!",
         "price": "9.50",
@@ -331,6 +375,7 @@
         "cost": "1.42"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Desserts You Can Make With Just 3 Ingredients",
         "description": "Why whip up a storm when you can make delicious, mouthwatering desserts with JUST 3 ingredients? If you're running low on ingredients well, these recipes are here to save the day: Indulge in our gooey and ultra-flavorful <a href=\"https://tasty.co/recipe/easy-3-ingredient-chocolate-mousse\">Chocolate Mousse</a> or test out the <a href=\"https://tasty.co/recipe/3-ingredient-pancakes\">Banana Pancakes</a> to make your meal super-satisfying and ever-so-sweet. Cook up a variety of desserts with just 3 ingredients: which 3-ingredient pick has your tastebuds in a tizz?",
         "price": "3.79",
@@ -338,6 +383,7 @@
         "cost": "1.73"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "33 3-Ingredient Sweet Treats!",
         "description": "Entertaining a crowd and don't have time to fire up your oven? We've got you covered with 33 of our best 3-ingredient desserts. You can pick between a <a href=\"https://tasty.co/recipe/3-ingredient-cookie-butter-cakes\">cookie butter cake</a> or <a href=\"https://tasty.co/recipe/3-ingredient-cookies-n-cream-ice-cream\">cookies & cream ice cream</a>! Or go the classic route and make yourself a delicious batch of <a href=\"https://tasty.co/recipe/3-ingredient-hazelnut-brownies\">brownies</a>. All you need are three ingredients and a sweet tooth (we know you've got that covered). So what are you waiting for? Let's get cooking! ",
         "price": "18.85",
@@ -345,6 +391,7 @@
         "cost": "11.64"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "After Dinner Comes Dessert",
         "description": "A crunchy salad, delicious appetizers and a scrumptious main course... Not enough? Dinner leaving you craving for something more? End the night with our most popular and indulgent desserts.. Choose between a . <a href=\"https://tasty.co/recipe/lemon-meringue-cupcakes\"> light lemon meringue </a> or a  <a href=\"https://tasty.co/recipe/swedish-sticky-chocolate-cake-kladdkaka\"> Swedish sticky chocolate cake </a>! Word from the wise \"FEAST ON BOTH!\"",
         "price": "32.20",
@@ -352,6 +399,7 @@
         "cost": "27.09"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "3 Ingredient Peanut Butter Cookies",
         "description": "Indulge in the simplest yet most satisfying treat with these 3-Ingredient Peanut Butter Cookies. Made with just peanut butter, sugar, and an egg, these cookies are a breeze to whip up, requiring minimal effort and time (under 30 minutes!). Plus, with such basic pantry staples, there's a good chance you have everything you need in your kitchen to make them right now! Gluten-free and utterly delicious, these cookies boast a perfect balance of sweet, savory, and nutty. Whether you're a baking novice or a seasoned pro, these peanut butter cookies are sure to become a quick favorite for any occasion. Enjoy!",
         "price": "3.95",
@@ -359,6 +407,7 @@
         "cost": "1.87"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "7 Recipes For Seafood Lovers",
         "description": "Calling all seafood lovers! Cooking fish and shellfish at home may seem intimidating — but it doesn't actually have to be. These easy <a href=\"https://tasty.co/recipe/popcorn-shrimp\">popcorn shrimp</a>, for example, are ready in under 30 minutes and only need five ingredients. Or, if you're already a seafood pro, impress everyone with this gourmet-style <a href=\"https://tasty.co/recipe/gourmet-salmon-dinner\">herb-crusted salmon</a>. Let’s get cooking!",
         "price": "49.95",
@@ -366,6 +415,7 @@
         "cost": "33.81"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Fish Lovers Only",
         "description": "When in doubt for dinner? Make fish! Recipes like <a href=\"https://tasty.co/recipe/tomato-pesto-salmon>tomato pesto salmon</a> and are colorful, versatile, and rich in protein. The best part is all of these dishes taste impressive but are actually super simple to prepare. Pair them with plenty of vegetables or your grain of choice, then sit back and enjoy.",
         "price": "13.83",
@@ -373,6 +423,7 @@
         "cost": "9.74"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "Romantic Meals For Two",
         "description": "Are you looking for meals to cook on that special date night? Don't worry, we've got you covered. Try our super fancy <a href=\"https://tasty.co/recipe/baked-lobster-tails\">lobster dinner</a> for two to impress your significant other, or indulge in an equally stunning <a href=\"https://tasty.co/compilation/garlic-shrimp-alfredo-dinner-for-two\">garlic shrimp alfredo dinner</a>. Light those candles and get ready to celebrate! ",
         "price": "15.83",
@@ -380,6 +431,7 @@
         "cost": "12.74"
     },
     {
+        "restaurant_reference": "2",
         "menuItem_name": "25 Mac 'N' Cheese Recipes",
         "description": "Mac ’n' cheese lovers, assemble! This is not a drill: We have not one, not three, not ten, but 25 mac ’n' cheese special recipes for your cooking pleasure. You want it quick and easy? Try this <a href=\"https://tasty.co/recipe/microwave-5-minute-mac-n-cheese\">microwave mac ’n' cheese</a>. How about some extra cheese? Here’s a <a href=\"https://tasty.co/recipe/five-cheese-mac-and-cheese\">five-cheese mac ’n' cheese</a>, because we mean business. Dig in!",
         "price": "5.99",
