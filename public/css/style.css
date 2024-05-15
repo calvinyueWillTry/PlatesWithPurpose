@@ -83,17 +83,18 @@ video {
     
 }
 
-.loginDiv {
+.login-card {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     position: relative;
     text-align: center;
-    padding: 25px;
+    padding: 5px;
+    margin: 5%;
     top: 300px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 40%;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 50px;
     z-index: 500;
 =======
@@ -262,6 +263,79 @@ font-style: italic;
 
 .menu-footer button {
 width: 50%;
+}
+
+.form-group {
+  align-items: end;
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.login-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: end;
+  padding: 5px;
+  width: 100%;
+}
+
+.logo {
+  width: 210px;
+  height: 180px;
+  margin-right: 50px;
+}
+
+.plate-header {
+  background-image: url(../images/plate-7933330.jpg);
+  display: flex;
+  flex-direction: row;
+  flex: content;
+  justify-content: center;
+  align-items: flex-end;
+  height: 230px;
+  width: 100%;
+  border: red 3px solid
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 1);
+  border: green solid 3px;
+  width: 100%;
+  z-index: 500;
+}
+
+.menu-item-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px;
+  width: 300px;
+  background-color: rgba(255, 235, 255, 1);
+  border: red solid 3px;
+  border-radius: 50px;
+  z-index: 500;
 }
 
 

@@ -20,10 +20,12 @@ Menu.init(
         price: {
             type: DataTypes.DECIMAL, //decimals not coming through
             allowNull: true,
+            defaultValue: 0,
         },
         time_to_prepare: { //produced as 2024-05-15 00:17:30
             type: DataTypes.INTEGER,
             allowNull: false,
+            defaultValue: 10,
         },
         cost: {
             type: DataTypes.DECIMAL,

@@ -1,21 +1,49 @@
-<div class="row ">
-  <div class="col-md-6 loginForm">
-    <h2>Login</h2>
 
-    <form class="form">
+
+<div class="row">
+  <div class="col-12">
+     <!--Section: Video Block-->
+    <section>
+      <video autoplay muted loop>
+        <source src="/images/PizzaMaking.mp4" type="video/mp4">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.2);">
+          <div class="container d-flex justify-content-center align-items-center h-100">
+            <div class="row align-items-center">
+              <div class="col-12">
+                <h1 class="mb-0 text-white display-1">PLATES WITH PURPOSE</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </video>
+      <!--Section: Video Block-->
+      <!--Login:-->
+<div class="row">
+  <div class="col-12 login-card">
+    <h2 class="login-title">Login</h2>
+    <h6 class="user-error" id="user-error">Please enter your</h6>
+
+    <form class="form login-form">
       <div class="form-group">
-        <label for="email-login">email:</label>
+        <label for="email-login">Email:</label>
         <input class="form-input" type="text" id="email-login" />
       </div>
       <div class="form-group">
-        <label for="password-login">password:</label>
+        <label for="password-login">Password:</label>
         <input class="form-input" type="password" id="password-login" />
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="btn btn-primary" id="login" type="submit">login</button>
+         <button class="btn btn-primary" id="signup" type="submit">signup</button>
       </div>
     </form>
   </div>
   
+</div>
 
+  </div>
+</div>
+
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./js/login.js"></script>
