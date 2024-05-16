@@ -1,14 +1,15 @@
 <div class="menu-item-card">
     <div class="menu-header">
-        <img class="menu-image" src="/images/menu/{{fileName}}"/>
-        <h3>{{menuItem_name}}</h3>
+        {{menuItems}}
+        <img class="menu-image" src="/images/menu/{{menuItems.file_name}}"/>
+        <h3>{{menuItems.menuItem_name}}</h3>
     </div>
     <div class="menu-body">
-        <h6>{{description}}</h6>
+        <h6>{{menuItems.description}}</h6>
   </div>
 
    <div class="menu-footer">
-        <h6 class="wait-time">Wait time {{time_to_prepare}} minutes</h6>
+        <h6 class="wait-time">Wait time {{menuItems.time_to_prepare}} minutes</h6>
         <button  id="menuItem_{{id}}" onclick="addItem({{id}})">Order</button>
   </div>
 

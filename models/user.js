@@ -19,10 +19,7 @@ User.init(
         type: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            references: {
-                model: 'user_type',
-                key: 'id',
-            },
+            defaultValue: 3
         },
         firstName: {
             type: DataTypes.STRING,

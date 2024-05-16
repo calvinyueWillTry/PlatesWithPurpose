@@ -22,7 +22,7 @@
 <body>
   <header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-scroll navbar-header">
     <div class="container-fluid">
       <img class="logo" src="/images/PwP_logo.png">
       
@@ -36,20 +36,34 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/plate/order">Order a Plate</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/api/plate/give">Give a Plate</a>
-          </li>
+           {{#if isReceiver}}
+                       <li class="nav-item">
+              <a class="nav-link" href="/api/plate/order">Order a Plate</a>
+            </li>
+
+
+          {{/if}}
+           {{#if isGiver}}
+           <li class="nav-item">
+              <a class="nav-link" href="/api/plate/give">Give a Plate</a>
+            </li>
+
+          {{/if}}
+          
+
+
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact Us</a>
           </li>
         </ul>
         {{#if logged_in}}
-              <a href="/profile" class="user-circle">
+              <a href="/api/user/profile" class="user-circle">
                 <i class="fas fa-user loggedIn"></i>
-               </a>
+                 </a>
+                <br>
+                <p class="User" id="logout">Logout</p>
+              
+               <script src="/js/logout.js"></script>
             {{else}}
             <a href="/login" class="user-circle">
                 <i class="fas fa-user loggedOut"></i>
@@ -69,13 +83,6 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-  
-    
-
-  <!-- Render script for logged in users only -->
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
 
 </body>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

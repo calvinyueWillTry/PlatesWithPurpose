@@ -9,12 +9,9 @@ router.get('/', async (req, res) => {
   });
 });
 
-router.get('/about-us', async (req, res) => {
-  // awaiting handlebar definition
-
-  // res.render('', { 
-    
-  // });
+router.get('/contact', async (req, res) => {
+  
+  res.render('contact');
 });
 
 router.get('/login', async (req, res) => {
@@ -35,6 +32,6 @@ router.get('/profile', async (req, res) => {
   // res.render('handlebar definition', {
 
   // })
-})
+
 
 module.exports = router;

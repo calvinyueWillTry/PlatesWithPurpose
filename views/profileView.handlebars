@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-12 login-container">
+    <h2 class="login-title">User Profile</h2>
+<form class="form profile-form">
+    <div class="form-group">
+        <label for="giver">Giver</label>
+        <input type="radio" id="giver-signup" name="role" value="3"
+        {{#if isGiver}}
+            checked="checked"
+          {{/if}}>
+        <label for="receiver">Receiver</label>
+        <input type="radio" id="receiver-signup" name="role" value="2" 
+        {{#if isReceiver}}
+            checked="checked"
+        {{/if}} >
+    </div>
+    <div class="form-group">
+        <label for="first-name-signup">First Name:</label>
+        <input class="form-input" type="text" id="first-name-signup" value="{{userData.firstName}}" required />
+    </div>
+    <div class="form-group">
+        <label for="last-name-signup">Last Name:</label>
+        <input class="form-input" type="text" id="last-name-signup"  value="{{userData.lastName}}" required />
+    </div>
+    <div class="form-group">
+        <label for="address-signup">Address:</label>
+        <input class="form-input" type="text" id="address-signup" value="{{userData.address}}"" required />
+    </div>
+    <div class="form-group">
+        <label for="city-signup">City:</label>
+        <input class="form-input" type="text" id="city-signup" value="{{userData.city}}" required />
+    </div>
+    <div class="form-group">
+        <label for="state-signup">State:</label>
+        <input class="form-input" type="text" id="state-signup" value="{{userData.state}}" required />
+    </div>
+    <div class="form-group">
+        <label for="zip-signup">Zip Code:</label>
+        <input class="form-input" type="text" id="zip-signup" value="{{userData.zip}}" required />
+    </div>
+    <div class="form-group">
+        <label for="phone-signup">Phone Number:</label>
+        <input class="form-input" type="text" id="phone-signup" value="{{userData.phone}}" required />
+    </div>
+    <div class="form-group">
+        <label for="email-signup">Email:</label>
+        <input class="form-input" type="email" id="email-signup" value="{{userData.email}}" required />
+    </div>
+    <div class="form-group">
+        <label for="password-signup">Password (Minimum 6 characters):</label>
+        <input class="form-input" type="password" id="password-signup" minlength="6" value="{{userData.password}}" required />
+    </div>
+    <div class="form-group">
+          <h4 class="error-message" id="error-message"  ></h4>
+        <button class="btn btn-primary" type="submit">Save</button>
+          
+    </div>
+</form>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/js/profile.js"></script>
