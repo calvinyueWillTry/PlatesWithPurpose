@@ -1,0 +1,18 @@
+<div class="menu-item-card">
+    <div class="menu-header">
+        <img class="menu-image" src="/images/plate-7933330.jpg"/>
+        <h3>{{userData.firstName}} {{userData.lastName}} </h3>
+    </div>
+    <div class="menu-body">
+        <h6>{{userData.address}}</h6>
+            <h6>{{userData.city}}, {{userData.state}} {{userData.zip}}</h6>
+  </div>
+
+   <div class="menu-footer">
+        <h6 class="wait-time">Date ordered: {{plateData.date_order}}</h6>
+        <h6 class="wait-time">Gifted: {{plateData.paid_for}}</h6>
+        <h6 class="wait-time">Pending gift: {{plateData.delivered}}</h6>
+   </div>
+
+        <button class="btn btn-primary" id="cancel">Cancel</button>
+</div>

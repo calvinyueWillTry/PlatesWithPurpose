@@ -1,35 +1,57 @@
-const profileFormHandler = async function (event) {
+const profileFormHandler = (event) => {
     event.preventDefault();
 
-    const emailEl = document
-        .querySelector('.email-signup')
-        .value.trim();
-    const passwordEl = document
-        .querySelector('.password-signup')
-        .value.trim();
+    const firstName = document.querySelector('#first-name-signup').value.trim();
+    const lastName = document.querySelector('#last-name-signup').value.trim();
+    const address = document.querySelector('#address-signup').value.trim();
+    const city = document.querySelector('#city-signup').value.trim();
+    const state = document.querySelector('#state-signup').value.trim();
+    const zip = document.querySelector('#zip-signup').value.trim();
+    const phone = document.querySelector('#phone-signup').value.trim();
+    const email = document.querySelector('#email-signup').value.trim();
+    const password = document.querySelector('#password-signup').value.trim();
+    let selectedRadio = document.querySelector('input[name="role"]:checked');
+    
+    // Get the value of the selected radio button
+    var userType = selectedRadio.value;
 
-    if (passwordEl.length >= 6 && emailEl) {
-        const response = await fetch('/api/users', {
-            method: 'POST',
-            body: JSON.stringify({
-                email: emailEl,
-                password: passwordEl,
-            }),
-            headers: { 'Content-Type': 'application/json' },
+    // Create user profile
+    fetch('/api/user', {
+        method: 'POST',
+        body: JSON.stringify({ 
+            firstName, 
+            lastName, 
+            address,
+            city, 
+            state, 
+            zip, 
+            phone, 
+            email, 
+            password,
+            'type': userType
+         }),
+        headers: { 'Content-Type': 'application/json' },
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Could not create user');
+        }
+        return response.json();
+        })
+        .then(newUser => {
+            // Redirect to view profile
+             document.location.replace(`/api/user/profile`);
+        })
+        .catch(error => {
+            $("#error-message").text(`Error in email or password, please try again`);
         });
 
-        if (response.ok) {
-            document.location.replace('/');
-        } else {
-            alert('Failed to sign up');
-        }
-    } else {
-        alert(
-            'Please include both a email and password, and make sure your password is at least 6 characters long'
-        );
-    }
+   
 };
 
 document
     .querySelector('.profile-form')
-    .addEventListener('submit', signupFormHandler);
+    .addEventListener('submit', profileFormHandler);
+
+    
+

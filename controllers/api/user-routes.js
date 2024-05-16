@@ -1,10 +1,12 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const constants = require('../../utils/constants');
 
 router.post('/', async (req, res) => {
   try {
-    const userData = await User.create(req.body);
 
+    const userData = await User.create(req.body);
+       
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
@@ -15,6 +17,37 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+router.get('/profile', async (req, res) => {
+  
+  if (req.session.logged_in) {
+    const user = await User.findByPk(req.session.user_id );
+
+    const userData = user.get({ plain: true })
+    
+    let isAdmin = false;
+    let isReceiver = false;
+
+    if (userData.type == constants.ADMIN){
+      isAdmin = true;
+    } else if (userData.type == constants.RECEIEVER) {
+      isReceiver = true;
+    }
+
+
+    res.render('profileView',{
+      userData, logged_in: true, isAdmin, isReceiver, isGiver: !isReceiver
+  });
+  } else {
+    res.render('profileCreate');
+  }
+
+});
+
+
+router.get('/login', async (req, res) => {
+    res.render('login');
+})
 
 router.post('/login', async (req, res) => {
   try {
@@ -48,7 +81,8 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.post('/logout', (req, res) => {
+router.get('/logout', (req, res) => {
+  console.log(1);
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -56,6 +90,7 @@ router.post('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
+  console.log(3);
 });
 
 module.exports = router;
