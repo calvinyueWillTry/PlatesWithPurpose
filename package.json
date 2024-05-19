@@ -21,7 +21,9 @@
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.18.0",
+    "mailtrap": "^3.3.0",
     "mysql2": "^3.9.7",
+    "nodemailer": "^6.9.13",
     "pg": "^8.11.5",
     "sequelize": "^6.37.3"
   }

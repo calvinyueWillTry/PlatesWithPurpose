@@ -30,9 +30,53 @@ router.get('/', async (req, res) => {
 
 router.get('/give', async (req, res) => {
     
-    res.render('give', { 
+  let userData;
+  let isAdmin = false;
+  let isReceiver = false;
+
+// Get user info
+if (req.session.logged_in) {
+  const user = await User.findByPk(req.session.user_id );
+  
+  userData = user.get({ plain: true })
+
+  if (userData.type == constants.ADMIN){
+    isAdmin = true;
+  } else if (userData.type == constants.RECEIEVER) {
+    isReceiver = true;
+  }
+
+} else {
+  // redirect to login it not logged in
+  res.render('login');
+}
+
+  try {
     
+      const dbPlateData = await Plate.findAll({
+        include: [
+        {
+          model: Menu,
+          attributes: ['description', 'cost'],
+        },{
+          model: User,
+          attributes: ['email', 'password'],
+        }
+      ],
     });
+      
+      const plateItems = dbPlateData.map((item) =>
+          item.get({ plain: true })
+      );
+console.log(dbPlateData);
+      // Send over the 'loggedIn' session variable to the 'homepage' template
+      res.render('give', {
+        plateItems, userData, logged_in: true, isAdmin, isReceiver, isGiver: !isReceiver
+      });
+    } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+    } 
 })
 
 router.get('/order', async (req, res) => {
@@ -87,7 +131,7 @@ if (req.session.logged_in) {
   const user = await User.findByPk(req.session.user_id );
   
   userData = user.get({ plain: true })
-
+  
   if (userData.type == constants.ADMIN){
     isAdmin = true;
   } else if (userData.type == constants.RECEIEVER) {
@@ -104,7 +148,7 @@ if (req.session.logged_in) {
       const dbPlateData = await Plate.findByPk(req.params.id);
       
       const plateData = dbPlateData.get({ plain: true });
-
+      
       const dbMenuData = await Menu.findByPk(plateData.menu_id);
       
       const menuData = dbMenuData.get({ plain: true });

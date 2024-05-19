@@ -11,13 +11,21 @@ Restaurant.hasOne(Menu, {foreignKey: "menu_id"});
 
 // Relations
 // Categories have many Products
-Plate.hasMany(Menu, {
-    foreignKey: "menu_id"
-});
-
 Plate.hasMany(User, {
-    foreignKey: "user_id"
-});
+    foreignKey: 'user_id',
+  });
+  
+ User.belongsTo(Plate, {
+    foreignKey: 'user_id',
+  });
 
-
+  Plate.hasMany(Menu, {
+    foreignKey: 'menu_id',
+  });
+  
+ Menu.belongsTo(Plate, {
+    foreignKey: 'menu_id',
+  });
+  
+  
 module.exports = {Plate, Restaurant, Menu, User};
