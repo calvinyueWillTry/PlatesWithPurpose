@@ -6,6 +6,10 @@
   z-index: 1;
 }
 
+.context-form{
+  position: relative;
+  margin-top: 250px;
+}
 /* Style the video element */
 video {
   position: absolute;
@@ -212,6 +216,7 @@ align-items: center;
 padding-bottom: 20px;
 
 }
+
 .menu-footer h6.wait-time {
 color: red;
 font-style: italic;
@@ -220,6 +225,11 @@ font-style: italic;
 .menu-footer button {
 width: 50%;
 }
+
+.user-footer-button {
+  justify-content: end;
+  width: 120px;
+  }
 
 .form-group {
   align-items: end;
@@ -261,13 +271,35 @@ width: 50%;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.plate-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+ 
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+}
+
+.plate-item-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+  background-color: rgba(255, 235, 255, 1);
+  border: black solid 1px;
+  border-radius: 50px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
+  z-index: 500;
+}
+
 .menu-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 300px;
-  background-color: rgba(255, 255, 255, 1);
   width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  
 }
 
 .menu-item-card {
@@ -276,6 +308,27 @@ width: 50%;
   flex-direction: column;
   margin: 10px;
   width: 300px;
+  background-color: rgba(255, 235, 255, 1);
+  border: black solid 1px;
+  border-radius: 50px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
+  z-index: 500;
+}
+
+
+.menu-image {
+  width: 100%;
+  overflow: hidden;
+
+
+}
+
+.user-item-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
   background-color: rgba(255, 235, 255, 1);
   border: black solid 1px;
   border-radius: 50px;

@@ -14,7 +14,7 @@ function addItem(menu_id){
         })
         .then(newPlate => {
             // Redirect to view order
-             document.location.replace(`/api/plate/order/${newPlate.plate_id}`);
+            document.location.replace(`/api/plate/order/${newPlate.id}`);
         })
         .catch(error => {
             console.error('Error:', error);
