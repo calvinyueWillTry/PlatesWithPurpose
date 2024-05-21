@@ -67,15 +67,40 @@ User.init(
                 },
             },
         },
+        isReceiver: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+        },
+        isGiver: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+        },
+        isAdmin: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false
+    }
     },
     {
         hooks: {
             beforeCreate: async (newUserData) => {
+                // User Type 
+                newUserData.isAdmin = newUserData.type == 1 ? true : false;
+                newUserData.isReceiver = newUserData.type == 2 ? true : false;
+                newUserData.isGiver = newUserData.type == 3 ? true : false;
+
+                // Encrypt Password
                 newUserData.password = await bcrypt.hash(newUserData.password, 10);
                 return newUserData;
             },
             beforeUpdate: async (updatedUserData) => {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+                // User Type 
+               // User Type 
+               newUserData.isAdmin = newUserData.type == 1 ? true : false;
+               newUserData.isReceiver = newUserData.type == 2 ? true : false;
+               newUserData.isGiver = newUserData.type == 3 ? true : false;
+
+                // Encrypt Password
+                newUserData.password = await bcrypt.hash(newUserData.password, 10);
                 return updatedUserData;
             },
         },

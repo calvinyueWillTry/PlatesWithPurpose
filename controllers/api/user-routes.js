@@ -1,6 +1,18 @@
+//-----------------------------------------------------------------
+// user-routes.js - api/plates routes
+//-----------------------------------------------------------------
+
+//-----------------------------------------------------------------
+// Declarations
+//-----------------------------------------------------------------
 const router = require('express').Router();
 const { User } = require('../../models');
 const constants = require('../../utils/constants');
+//const email = require('../../utils/email');
+
+//-----------------------------------------------------------------
+// End points
+//-----------------------------------------------------------------
 
 router.post('/', async (req, res) => {
   try {
@@ -11,6 +23,7 @@ router.post('/', async (req, res) => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
 
+      
       res.status(200).json(userData);
     });
   } catch (err) {
@@ -20,23 +33,15 @@ router.post('/', async (req, res) => {
 
 router.get('/profile', async (req, res) => {
   
+  // Get user info from session
   if (req.session.logged_in) {
     const user = await User.findByPk(req.session.user_id );
 
     const userData = user.get({ plain: true })
     
-    let isAdmin = false;
-    let isReceiver = false;
-
-    if (userData.type == constants.ADMIN){
-      isAdmin = true;
-    } else if (userData.type == constants.RECEIEVER) {
-      isReceiver = true;
-    }
-
-
+    // check if they have an order
     res.render('profileView',{
-      userData, logged_in: true, isAdmin, isReceiver, isGiver: !isReceiver
+      userData, logged_in: req.session.logged_in
   });
   } else {
     res.render('profileCreate');
@@ -44,6 +49,39 @@ router.get('/profile', async (req, res) => {
 
 });
 
+/// Route for updating an existing user
+router.put('/profile/:id', async (req, res) => {
+  console.log("id:", req.params.id );
+  console.log(req.body);
+  //const { id } = req.params; // get id from url param
+  try {
+    const userData = req.body; // this is the new field data sent from the profileView
+    const [updated] = await User.update({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      address: req.body.address,
+      city: req.body.city,
+      state: req.body.state,
+      zip: req.body.zip,
+      phone: req.body.phone,
+      type: req.body.userType,
+      isAdmin: req.body.userType == 1 ? true : false,
+      isReceiver: req.body.userType == 2 ? true : false,
+      isGiver: req.body.userType == 3 ? true : false
+
+    }, {
+      where: { id: req.params.id } 
+    });
+
+  if (updated > 0) {
+      res.json({ message: 'User updated successfully' });
+    } else {
+      res.status(404).json({ message: 'User not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to update user due to an error', error: error.toString() }); // give me an error json
+  }
+});
 
 router.get('/login', async (req, res) => {
     res.render('login');
@@ -82,7 +120,7 @@ router.post('/login', async (req, res) => {
 });
 
 router.get('/logout', (req, res) => {
-  console.log(1);
+  
   if (req.session.logged_in) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -90,7 +128,7 @@ router.get('/logout', (req, res) => {
   } else {
     res.status(404).end();
   }
-  console.log(3);
+  
 });
 
 module.exports = router;

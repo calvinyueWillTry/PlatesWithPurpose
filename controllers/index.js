@@ -1,11 +1,18 @@
-const router = require('express').Router();
+//-----------------------------------------------------------------
+// index.js - routes index 
+//-----------------------------------------------------------------
 
+//-----------------------------------------------------------------
+// Declarations
+//-----------------------------------------------------------------
+const router = require('express').Router();
 const Routes = require('./api');
 const homeRoutes = require('./home-routes');
-//const restaurantRoute = require("./Restaurant-Routes");//includes menu
 
+//-----------------------------------------------------------------
+// Routes
+//-----------------------------------------------------------------
 router.use('/', homeRoutes);
-//router.use("/restaurants", restaurantRoute)
 router.use('/api', Routes);
 
 module.exports = router;
