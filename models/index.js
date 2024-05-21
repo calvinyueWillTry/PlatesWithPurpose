@@ -1,12 +1,7 @@
 // import models
-//const Restaurant = require("./Restaurants");
 const Plate = require("./Plates");
 const Menu = require("./Menu");
-//const UserType = require("./UserType");
 const User = require("./User");
-
-//selects Restaurants then Menu (item)
-//Restaurant.hasOne(Menu, {foreignKey: "menu_id"});
 const EmailLog = require("./EmailLog");
 
 // Relations
