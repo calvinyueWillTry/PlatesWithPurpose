@@ -53,22 +53,20 @@ if (req.session.logged_in) {
 
   try {
     
-      const dbPlateData = await Plate.findAll({
+      const dbPlateData = await Menu.findAll({
         include: [
-        {
-          model: Menu,
-          attributes: ['description', 'cost'],
-        },{
-          model: User,
-          attributes: ['email', 'password'],
-        }
+          {
+            model: User,
+            through: Plate
+
+          }
       ],
-    });
+    }); 
       
       const plateItems = dbPlateData.map((item) =>
           item.get({ plain: true })
       );
-console.log(dbPlateData);
+console.log(plateItems);
       // Send over the 'loggedIn' session variable to the 'homepage' template
       res.render('give', {
         plateItems, userData, logged_in: true, isAdmin, isReceiver, isGiver: !isReceiver

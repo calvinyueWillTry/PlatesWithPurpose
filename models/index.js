@@ -11,21 +11,19 @@ const EmailLog = require("./EmailLog");
 
 // Relations
 // Categories have many Products
-Plate.hasMany(User, {
-    foreignKey: 'user_id',
-  });
-  
- User.belongsTo(Plate, {
-    foreignKey: 'user_id',
-  });
-
-  Plate.hasMany(Menu, {
-    foreignKey: 'menu_id',
-  });
-  
- Menu.belongsTo(Plate, {
-    foreignKey: 'menu_id',
-  });
+User.belongsToMany(Menu,{
+  through:{
+    model:Plate,
+    unique:false
+  }
+})
+Menu.belongsToMany(User,{
+  through:{
+    model:Plate,
+    unique:false
+  }
+})
+Plate.hasMany(User)
   
   
 module.exports = {Plate, Menu, User, EmailLog};
