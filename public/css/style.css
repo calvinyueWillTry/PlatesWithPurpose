@@ -26,6 +26,22 @@ video {
 100% { color: green; }
 }
 
+.thankyou {
+  font-size: 80px;
+  display: flex;
+  flex-direction: row;
+  flex: content;
+  justify-content: center;
+  color:black
+}
+.replyback {
+  font-size: 80px;
+  display: flex;
+  flex-direction: row;
+  flex: content;
+  justify-content: center;
+  color:black
+}
 
 .user-circle {
   display: inline-block;

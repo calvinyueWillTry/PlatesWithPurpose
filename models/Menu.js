@@ -34,15 +34,7 @@ Menu.init(
         file_name: {
             type: DataTypes.STRING,
             allowNull: true, 
-        }, 
-        //needed in both?
-        restaurant_reference: {
-        type: DataTypes.INTEGER,
-        references: {
-        model: 'restaurants',
-        key: 'id',
-        unique: false
-        }
+        
         }
     },
     { //where is created_at and updated_at coming from?
