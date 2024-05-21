@@ -22,6 +22,14 @@ Plates.init(
         type: DataTypes.DATE,
         defaultValue: sequelize.literal('CURRENT_TIMESTAMP')
     },
+    description: {
+        type: DataTypes.TEXT,//VARCHAR?
+        allowNull: false,
+    },
+    cost: {
+        type: DataTypes.DECIMAL,
+        allowNull: false,
+    },
     menu_id: {
         type: DataTypes.INTEGER,
         references: {

@@ -1,16 +1,17 @@
 <div class="plate-item-card">
     <div class="menu-header">
         
-        <h3>menu = {{menu_id}}</h3>
-        <h3>user = {{user_id}}</h3>
+      <img class="menu-image" src="/images/plate-7933330.jpg"/>
+        <h3>Location: {{user.city}}, {{user.state}}  <span class="cost">Cost ${{cost}} </span></h3>
     </div>
     <div class="menu-body">
-        <h6>{{user_id}}</h6>
+        <h3>Description: {{description}}</h3>
+        <h3>How long since they asked: {{date_order}}</h3>
   </div>
 
    <div class="menu-footer">
-        <h6 class="wait-time">Wait time {{time_to_prepare}} minutes</h6>
-        <button  id="menuItem_{{id}}" onclick="addItem({{id}})">Pay Now</button>
+        <h6 class="wait-time">we will go to work on this a soon as we have funding</h6>
+        <button  id="menuItem_{{id}}" onclick="payItem({{id}})">Buy this meal</button>
   </div>
 
 </div>

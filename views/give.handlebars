@@ -1,11 +1,20 @@
 
+
+
+ {{#if noRecords}}
 <div class="plate-header">
-<h1>Select from people who are in need</h1>
+<h1>Thank you, all the needs are being met.</h1>
+
+</div>
+ {{else}}
+ <div class="plate-header">
+<h1>Unmet need, please select what you can</h1>
+
 </div>
 <div class="row">
   
     
-    <div class="plate-container">
+    <div class="menu-container">
       
     {{#each plateItems as |item|}}
      
@@ -13,5 +22,6 @@
     {{/each}}
     </div>
 </div>
+{{/if}}
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="/js/order.js"></script> 
