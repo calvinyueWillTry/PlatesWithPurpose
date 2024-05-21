@@ -20,6 +20,12 @@ video {
   object-fit: cover; /* Video covers entire screen */
 }
 
+.cost {
+  margin:5px;
+  color: red;
+  font-size: 120%;
+}
+
 @keyframes flashLogin {
 0% { color: white; }
 50% { color: lightblue; }

@@ -18,44 +18,54 @@ router.get('/',  withAuth , async (req, res) => {
     
   // if user already has an order render their order page
   Plate.findOne({
-    where: { user_id: req.session.user_id, delivered: false },
+    where: { user_id: req.session.user_id, paid_for: false },
   }).then((plate) => {
     if (plate) res.redirect(`/api/plate/order/${plate.id}`);
   });
 
 });
 
-// Needs work
+
 router.get('/give',  withAuth ,async (req, res) => {
       
 
-// Get user info
-if (req.session.logged_in) {
-  const user = await User.findByPk(req.session.user_id );
-  userData = user.get({ plain: true })
-} else {
-  // redirect to login if not logged in
-  res.render('login');
-}
+  // Get user info
+  if (req.session.logged_in) {
+    const user = await User.findByPk(req.session.user_id );
+    userData = user.get({ plain: true })
+  } else {
+    // redirect to login if not logged in
+    res.render('login');
+  }
 
   try {
     
-      const dbPlateData = await Menu.findAll({
-        include: [
-          {
-            model: User,
-            through: Plate
-
-          }
-      ],
-    }); 
-      
-      const plateItems = dbPlateData.map((item) =>
+      const dbPlateData = await Plate.findAll({
+        include: [{  model: User }],
+        where: {
+          paid_for: false,
+        }
+      }); 
+  
+      const dbMenuData = await Plate.findAll({
+        include: [{  model: Menu }],
+        where: {
+          paid_for: false,
+        }
+      }); 
+  
+      const plateItems = dbPlateData.map((item) => 
           item.get({ plain: true })
-      );
-console.log(plateItems);
+    );
+
+    
+    plateItems.forEach(item => {
+      console.log(item);
+      item.date_order = formatDateToHours( new Date(item.date_order));
+    });
+     
       res.render('give', {
-        plateItems, userData, logged_in: req.session.logged_in
+        plateItems,  userData, logged_in: req.session.logged_in, noRecords: plateItems.length > 0 ? false : true
       });
     } catch (err) {
       console.log(err);
@@ -73,7 +83,7 @@ router.get('/order', withAuth , async (req, res) => {
 
   // if user already has an order render their order page
   Plate.findOne({
-    where: { user_id: req.session.user_id, delivered: false },
+    where: { user_id: req.session.user_id, paid_for: false },
   }).then((plate) => {
     if (plate) res.redirect(`/api/plate/order/${plate.id}`);
   });
@@ -129,8 +139,13 @@ router.post('/order',  withAuth ,async (req, res) => {
 
     try {
            
+      const menuItem1 = await Menu.findByPk(req.body.menu_id);
+      const menuData1 = menuItem1.get({ plain: true });
+
         const newPlate = await Plate.create({
           ...req.body,
+          description: menuData1.menuItem_name,
+          cost: menuData1.cost,
           user_id: req.session.user_id,
         });
 
@@ -192,6 +207,47 @@ router.delete('/order/:id', withAuth, async (req, res) => {
   }
 
 });
+
+router.post('/give',  withAuth , async (req, res) => {
+  
+  // Get user info
+  if (req.session.logged_in) {
+    const user = await User.findByPk(req.session.user_id );
+    userData = user.get({ plain: true })
+  }
+  
+  try {
+    const [updated] = await Plate.update({
+      paid_for: true
+    }, {
+      where: { id: req.body.id } 
+    });
+
+  
+    if (updated > 0) {
+      res.json({ message: 'plate updated successfully' });
+    } else {
+      res.status(404).json({ message: 'Plate not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to update plate due to an error', error: error.toString() }); // give me an error json
+  }
+})
+
+
+// Helper function to format date to hours/minutes
+const formatDateToHours = (date) => {
+  let diff  = new Date().getTime() - date.getTime() ;
+
+  let msec = diff;
+const hh = Math.floor(msec / 1000 / 60 / 60);
+msec -= hh * 1000 * 60 * 60;
+const mm = Math.floor(msec / 1000 / 60);
+msec -= mm * 1000 * 60;
+const ss = Math.floor(msec / 1000);
+msec -= ss * 1000;
+  return `${hh} hours ${mm < 10 ? '0' : ''}${mm} minutes`;
+};
 
 module.exports = router;
 

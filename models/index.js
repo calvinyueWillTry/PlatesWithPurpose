@@ -5,20 +5,11 @@ const User = require("./User");
 const EmailLog = require("./EmailLog");
 
 // Relations
-// Categories have many Products
-User.belongsToMany(Menu,{
-  through:{
-    model:Plate,
-    unique:false
-  }
-})
-Menu.belongsToMany(User,{
-  through:{
-    model:Plate,
-    unique:false
-  }
-})
-Plate.hasMany(User)
-  
-  
+// Products belongsTo Category
+User.hasMany(Plate);
+Plate.belongsTo(User);
+
+Menu.hasMany(Plate);
+Plate.belongsTo(Menu);
+
 module.exports = {Plate, Menu, User, EmailLog};
