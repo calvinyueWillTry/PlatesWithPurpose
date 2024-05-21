@@ -40,7 +40,7 @@ contactForm.addEventListener("submit", function(event) {
     
        
 
-    fetch("/api/email/send", { //  /api/contact
+    fetch("/api/email/contact", { //  /api/contact
         method: 'POST',
         body: JSON.stringify({
             email: emailInputted,
