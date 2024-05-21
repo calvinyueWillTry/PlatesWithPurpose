@@ -40,15 +40,20 @@ if (req.session.logged_in) {
 
   try {
     
-      const dbPlateData = await Plate.findAll({
-        include: [{ model: Menu}]
-    });
+      const dbPlateData = await Menu.findAll({
+        include: [
+          {
+            model: User,
+            through: Plate
+
+          }
+      ],
+    }); 
       
       const plateItems = dbPlateData.map((item) =>
           item.get({ plain: true })
       );
 console.log(plateItems);
-      // Render give page
       res.render('give', {
         plateItems, userData, logged_in: req.session.logged_in
       });
