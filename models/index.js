@@ -1,7 +1,7 @@
 // import models
 const Plate = require("./Plates");
 const Menu = require("./Menu");
-const User = require("./User");
+const User = require("./user");
 const EmailLog = require("./EmailLog");
 
 // Relations
