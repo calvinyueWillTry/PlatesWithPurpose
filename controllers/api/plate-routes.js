@@ -74,23 +74,28 @@ router.get('/give',  withAuth ,async (req, res) => {
 
 router.get('/order', withAuth , async (req, res) => {
   console.log("ORDER-----------------------------------");
+  let existingOrder = false;
+
   // Get user info
   if (req.session.logged_in) {
     const user = await User.findByPk(req.session.user_id );
     userData = user.get({ plain: true })
   } 
-  console.log(userData);
+  
   // if user already has an order render their order page
   Plate.findOne({
     where: { user_id: req.session.user_id, paid_for: false },
   }).then((plate) => {
-    
-    const plataData = plate.get({ plain: true });
-    console.log(plataData);
-    if (plate) res.redirect(`/api/plate/order/${plataData.id}`);
-  });
+    if (plate) {
+      existingOrder = true;
+      const plataData = plate.get({ plain: true });
+      console.log(plataData);
+       res.redirect(`/api/plate/order/${plataData.id}`);
+  }
+});
   
   // Show user menu to place an new order
+  if (!existingOrder){
   try {
     
       const dbMenuData = await Menu.findAll();
@@ -107,6 +112,7 @@ router.get('/order', withAuth , async (req, res) => {
       console.log(err);
       res.status(500).json(err);
     } 
+  }
 })
 
 router.get('/order/:id',  withAuth , async (req, res) => {
