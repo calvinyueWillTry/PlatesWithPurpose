@@ -24,7 +24,7 @@ class EmailClass {
     console.log("send email----------------------------------------------------------------")
     let result = [];
     result.ok = true;
-return result;
+//return result;
     try{
         var transport = nodemailer.createTransport({
             host: process.env.MAILTRAP_HOST,

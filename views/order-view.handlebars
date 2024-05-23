@@ -1,15 +1,19 @@
 
-<div class="plate-header">
-<h1>Your order has been placed</h1>
-</div>
-<div >
-<h3>You will be notified as soon a someone gifts your order.</h3>
-</div>
-<div>
-    <button class="btn btn-primary user-footer-button" id="cancel"  onclick="deleteItem('{{plateData.id}}')">Cancel</button>
+<div class="row plate-header">
+  <div class="col-12"></div>
+    <h1>Your order has been placed</h1>
+     <h3>You will be notified as soon a someone gifts your order.</h3>
+  </div>
+  <div class="col-12"></div>
+       <button class="btn btn-primary menu-cancel" id="cancel"  onclick="deleteItem('{{plateData.id}}')">Cancel Order</button>
+  </div>
 </div>
 
-<div class="row">
+<div>
+  
+</div>
+
+<div class="row user-view-container">
   <div class="col-4">
     <div class="menu-container">
       {{> menu_item_view}}

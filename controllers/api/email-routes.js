@@ -49,14 +49,19 @@ router.post('/contact', async (req, res) => {
 
   try {
     let result =  email.send(
-      process.env.MAILTRAP_ADMIN,
+      process.env.SITE_ADMIN,
       "ADMIN INQUIRY from " + req.body.email + " : " + req.body.subject,  
       req.body.message,
       req.body.html
     );
+    console.log("Response--------------------");
+    console.log(result);
 
       res.status(200).json(result);
   } catch (err) {
+    console.log("3Response--------------------");
+    console.log(err);
+
     res.status(400).json(err);
   }
 });

@@ -2,28 +2,34 @@
   <div class="col-12">
      <!--from home-routes.js-->
     <section>
-      <header class="context-form" ></header>
+      <div class="contact-form" >
       <h1>Contact Us</h1>
       <h3>To be a recepient or a giver (and earn tax deductions for your contributions), please let us know how we can help:</h3>
         
     <form class="form" id="inquiry-form">
     <h6 class="user-error" id="user-error">Please enter your information below.</h6>
+      
       <div class="form-group">
-        
-        <p><label for="email-entry">Email:</label>
-        <input class="form-input" type="text" id="emailInquiry" /></p>
-                <p><label for="subect">Subject </label>
-        <input class="form-input" type="text" id="textSubject"></p>
+        <label for="email-entry">Email:</label>
+        <input class="form-input" type="text" id="emailInquiry" value=" {{#if logged_in}}{{userData.email}}{{/if}}" />
       </div>
+
       <div class="form-group">
-        <label class="question-input" type="text" id="questions"> 
-          <p>Message:</p></label>
-        <textarea for="inquiry" name="inquiryhtml" id="inquire" cols="36" rows="5"></textarea>
+        <label for="textSubject">Subject:</label>
+        <input class="form-input" type="text" id="textSubject" />
       </div>
+
+      <div class="form-group">
+        <label for="inquire">Message:</label>
+        <textarea class="form-input" type="text" id="inquire" cols="36" rows="5"></textarea>
+      </div>
+      
+      
       <div class="form-group">
         <button for="submit" class="btn btn-primary" type="submit">Submit Inquiry</button>
       </div>
     </form>    
+    </div>
     </section>
   </div>
 </div>

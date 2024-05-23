@@ -39,7 +39,6 @@ contactForm.addEventListener("submit", function(event) {
     textInput = document.querySelector('#inquire').value.trim();
     
    
-
     fetch("/api/email/contact", { //  /api/contact
         method: 'POST',
         body: JSON.stringify({
@@ -51,15 +50,12 @@ contactForm.addEventListener("submit", function(event) {
         headers: { 'Content-Type': 'application/json' },
     })    
     .then(response => {
+
         if (!response.ok) {
             throw new Error('Could not send email');
         }
-        return response.json();
-        })
-        .then(response => {
-            document.location.replace(`/api/email/thankyou`);
-            return; 
-            
+        document.location.replace(`/api/email/thankyou`);
+        
         })
         .catch(error => {
             $("#error-message").text(`Error in email or password, please try again`);

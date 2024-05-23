@@ -60,8 +60,7 @@ router.get('/give',  withAuth ,async (req, res) => {
 
     
     plateItems.forEach(item => {
-      console.log(item);
-      item.date_order = formatDateToHours( new Date(item.date_order));
+      item.date_order = formatTimeDiff( new Date(item.date_order));
     });
      
       res.render('give', {
@@ -120,7 +119,9 @@ router.get('/order/:id',  withAuth , async (req, res) => {
       const dbPlateData = await Plate.findByPk(req.params.id);
       
       const plateData = dbPlateData.get({ plain: true });
+      plateData.date_order = formatTimeDiff( new Date(plateData.date_order));
       
+
       const dbMenuData = await Menu.findByPk(plateData.menu_id);
       
       const menuData = dbMenuData.get({ plain: true });
@@ -189,7 +190,6 @@ router.delete('/order/:id', withAuth, async (req, res) => {
     // Send user email for canceled order
     // Get user info and menu item
     
-    console.log(plateData);
     const user = await User.findByPk(req.session.user_id);
     let userData = user.get({ plain: true });
    
@@ -216,6 +216,17 @@ router.post('/give',  withAuth , async (req, res) => {
     userData = user.get({ plain: true })
   }
   
+  // Lookup receiver email
+  const dbPlateData = await Plate.findOne({
+    include: [{  model: User }],
+    where: {
+      id: req.body.id,
+    }
+  }); 
+  
+  const plateData = dbPlateData.get({ plain: true });
+
+  // Update plate to paid for
   try {
     const [updated] = await Plate.update({
       paid_for: true
@@ -223,8 +234,24 @@ router.post('/give',  withAuth , async (req, res) => {
       where: { id: req.body.id } 
     });
 
+    
   
+
     if (updated > 0) {
+      // Email to reciepient
+      email.send(
+        plateData.user.email,
+        "You meal have been paid for",
+        `Your ${plateData.description} will be delivered once we have finished preparing it. Be sure to reach out to us if your address has changed so our delivery person can find you.`,
+        `<h2>Your ${plateData.description} will be delivered once we have finished preparing it.</h2><br><h3>Be sure to reach out to us if your address has changed so our delivery person can find you.</h3>`,
+      );
+      // Email to gifter
+      email.send(
+        userData.email,
+        "Thank you for your payment",
+        `Your $ ${plateData.cost} have helped another, and we thank you for your generosity.`,
+        `<h2>Your $ ${plateData.cost} have helped another, and we thank you for your generosity.,</h2>`,
+      );
       res.json({ message: 'plate updated successfully' });
     } else {
       res.status(404).json({ message: 'Plate not found' });
@@ -236,18 +263,29 @@ router.post('/give',  withAuth , async (req, res) => {
 
 
 // Helper function to format date to hours/minutes
-const formatDateToHours = (date) => {
+const formatTimeDiff = (date) => {
+  let hour = "";
+  
+
   let diff  = new Date().getTime() - date.getTime() ;
 
   let msec = diff;
-const hh = Math.floor(msec / 1000 / 60 / 60);
-msec -= hh * 1000 * 60 * 60;
-const mm = Math.floor(msec / 1000 / 60);
-msec -= mm * 1000 * 60;
-const ss = Math.floor(msec / 1000);
-msec -= ss * 1000;
-  return `${hh} hours ${mm < 10 ? '0' : ''}${mm} minutes`;
+  const hh = Math.floor(msec / 1000 / 60 / 60);
+  msec -= hh * 1000 * 60 * 60;
+  const mm = Math.floor(msec / 1000 / 60);
+  msec -= mm * 1000 * 60;
+  const ss = Math.floor(msec / 1000);
+  msec -= ss * 1000;
+  
+  if (hh > 0 ) {
+    hour = `${hh} hours`;
+  } 
+
+ 
+
+  return `${hour} ${mm < 10 ? '0' : ''}${mm} minutes`;
 };
+
 
 module.exports = router;
 
