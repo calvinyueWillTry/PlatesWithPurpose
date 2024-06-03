@@ -3,6 +3,9 @@
 ## Description 
 Plates With Purpose is an innovative platform that acts as a cross between a food bank and a takeout restaurant. It brings together individuals who want to help others in need by providing them with essential food items and those who are seeking assistance with their food requirements. Our platform facilitates the process of connecting receivers and gifters, ensuring that those in need receive the support they require.
 
+## Functions overview
+The models were designed to not only allow primary Keys to be the autoincremented ids, and correlated to each other through foreignKey relationships, but also for speicifc items for each model to be created, and processed as such. For example, Menu.js (presumably from the specific restaurant) has the menu's name, description, price, time_to_prepare, cost (to restaurant), and file_name. This way, from the specific menu, because Menu.hasMany(Plate); the Plate.js which features the individual items avaiable (pulled from menuitem_List1.json within the seeds folder, into the Menu via the seeds index), will appear from underneath the Menu (its foreignKey relationships to Menu and User are established in its model). While they have a few common columns (description and cost), delivered, paid_for and date_order establish if the order was delivered, was it paid for, and the date it occurred. Then after going through the routes (controllers folder, which also correlate the other index.js folders), it reaches the front end handlebars (script files listed) through the JS folder within Public. These ensure that the functions of the handlebars sections operate the way that they're supposed to. 
+
 ## Features
  - **Receiver and Gifter Login:** Users can log in to the platform either as receivers, who are seeking assistance, or as gifters, who are willing to donate food items or funds to help others.
 
